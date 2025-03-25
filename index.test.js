@@ -1,5 +1,7 @@
 import {capitalize, reverseString, calculator} from "./index.js";
 import caesarChipher from "./caesarCipher.js";
+import analyzeArray from "./analyzeArray.js";
+
 
 it("capitalize exists", function() {
     expect(capitalize);
@@ -55,4 +57,8 @@ it("caesarCipher works (2)", function() {
 
 it("caesarCipher works (3)", function() {
     expect(caesarChipher("HeLLo, world!", 3)).toBe("KhOOr, zruog!");
+});
+
+it("analyzeArray works", function() {
+    expect(analyzeArray([1, 8, 3, 4, 2, 6])).toEqual({"average": 4, "min": 1, "max": 8, "length": 6});
 });
