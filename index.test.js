@@ -35,3 +35,11 @@ it("calculator.multiply works (1)", function() {
 it("calculator.multiply works (2)", function() {
     expect(calculator.multiply(3, -3)).toBe(-9);
 });
+
+it("calculator.divide works (1)", function() {
+    expect(calculator.divide(3, 3)).toBe(1);
+});
+
+it("calculator.divide works (2)", function() {
+    expect(calculator.divide(3, 0)).toThrow("Division by zero");
+});
