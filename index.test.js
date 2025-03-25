@@ -41,5 +41,5 @@ it("calculator.divide works (1)", function() {
 });
 
 it("calculator.divide works (2)", function() {
-    expect(calculator.divide(3, 0)).toThrow("Division by zero");
+    expect(function() {calculator.divide(3, 0)}).toThrow("Divide by zero");
 });
