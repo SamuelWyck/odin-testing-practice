@@ -1,4 +1,4 @@
-import {capitalize, reverseString} from "./index.js";
+import {capitalize, reverseString, calculator} from "./index.js";
 
 it("capitalize exists", function() {
     expect(capitalize);
@@ -14,4 +14,8 @@ it("reverseString exists", function() {
 
 it("reverseString works", function() {
     expect(reverseString("test")).toBe("tset");
+});
+
+it("calculator.add works", function() {
+    expect(calculator.add(3, 2)).toBe(5);
 });
