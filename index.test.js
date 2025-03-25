@@ -1,4 +1,5 @@
 import {capitalize, reverseString, calculator} from "./index.js";
+import caesarChipher from "./caesarCipher.js";
 
 it("capitalize exists", function() {
     expect(capitalize);
@@ -42,4 +43,16 @@ it("calculator.divide works (1)", function() {
 
 it("calculator.divide works (2)", function() {
     expect(function() {calculator.divide(3, 0)}).toThrow("Divide by zero");
+});
+
+it("caesarCipher works (1)", function() {
+    expect(caesarChipher("xyz", 3)).toBe("abc");
+});
+
+it("caesarCipher works (2)", function() {
+    expect(caesarChipher("HeLLo", 3)).toBe("KhOOr");
+});
+
+it("caesarCipher works (3)", function() {
+    expect(caesarChipher("HeLLo, world!", 3)).toBe("KhOOr, zruog!");
 });
