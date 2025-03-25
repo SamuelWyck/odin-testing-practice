@@ -5,4 +5,9 @@ function capitalize(string) {
 };
 
 
-export {capitalize};
+function reverseString(string) {
+    return string.split("").reverse().join("");
+};
+
+
+export {capitalize, reverseString};
