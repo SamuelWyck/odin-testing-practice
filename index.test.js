@@ -19,3 +19,11 @@ it("reverseString works", function() {
 it("calculator.add works", function() {
     expect(calculator.add(3, 2)).toBe(5);
 });
+
+it("calculator.subtract works (1)", function() {
+    expect(calculator.subtract(3, 2)).toBe(1);
+});
+
+it("calculator.subtract works (2)", function() {
+    expect(calculator.subtract(3, -2)).toBe(5);
+});
