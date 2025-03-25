@@ -27,3 +27,11 @@ it("calculator.subtract works (1)", function() {
 it("calculator.subtract works (2)", function() {
     expect(calculator.subtract(3, -2)).toBe(5);
 });
+
+it("calculator.multiply works (1)", function() {
+    expect(calculator.multiply(3, 2)).toBe(6);
+});
+
+it("calculator.multiply works (2)", function() {
+    expect(calculator.multiply(3, -3)).toBe(-9);
+});
