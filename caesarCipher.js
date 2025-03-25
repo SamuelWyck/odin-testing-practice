@@ -2,8 +2,8 @@
 
 function caesarChipher(string, offset) {
     const alphabet = "abcdefghijklmnopqrstuvwxyz";
-    const shiftedLetters = [];
     const regex = /\w/;
+    const shiftedLetters = [];
 
     for (let char of string) {
         if (!regex.test(char)) {
@@ -19,7 +19,7 @@ function caesarChipher(string, offset) {
         if (char === char.toUpperCase()) {
             newChar = newChar.toUpperCase();
         }
-        
+
         shiftedLetters.push(newChar);
     }
 
